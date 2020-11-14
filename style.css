@@ -1,0 +1,616 @@
+* {
+    padding: 0;
+    margin: 0;
+  
+}
+
+/*---------- MENU ----------*/
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 9%; 
+    height: 22px;
+    background-color: #212529;
+    
+}
+.lista li {
+    display: inline-block;
+    padding: 0px 20px;
+    
+    
+    
+}
+
+.lista li a:hover {
+    transition: 0.5s ease;
+    color: #e9ecef
+}
+
+
+.lista a {
+
+    color: #adb5bd;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+
+
+
+
+.img-container img {
+    width: 200px;
+}
+
+/*---------- MENU ----------*/
+
+
+
+
+/*---------- DIMENSÕES PRIMEIRA PÁGINA ----------*/
+.primeira-pg {
+    width: 100%;
+    height: 587px;
+    position: relative;
+    background-color: black;
+    perspective: 100rem;
+    overflow: hidden;
+}
+
+
+/*---------- DIMENSÕES PRIMEIRA PÁGINA ----------*/
+
+/*---------- FUNDO PRIMEIRA PÁGINA ----------*/
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-color: #212529;
+    overflow: hidden;
+
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    animation: animação-escala 25s;
+    
+}
+
+/*---------- FUNDO PRIMEIRA PÁGINA ----------*/
+
+/*---------- ANIMAÇÃO FUNDO PRIMEIRA PÁGINA ----------*/
+
+@keyframes animação-escala {
+
+    0% {
+        transform: scale(1.3)
+
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*---------- ANIMAÇÃO FUNDO PRIMEIRA PÁGINA ----------*/
+
+
+/*---------- TEXTO PRIMEIRA PÁGINA ----------*/
+.container-texto {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    color: #e9ecef;
+    opacity: 0;
+    animation: animação-texto 1s 0.5s forwards;
+    
+    
+}
+.container-texto p
+ {
+   
+    padding-bottom: 50px;
+    animation: animação-texto 1s 0.7s forwards;
+    font-size: 25px;
+}
+
+.container-texto h1 {
+    
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    padding-bottom: 20px;
+    animation: animação-texto 1s 0.5s forwards;
+
+}
+
+
+/*---------- TEXTO PRIMEIRA PÁGINA ----------*/
+
+/*---------- ANIMAÇÃO TEXTO PRIMEIRA PÁGINA ----------*/
+
+@keyframes animação-texto {
+0% {
+    transform: translateY(40rem)rotateY(-150deg);
+}
+100% {
+    transform: translateY(0)rotateY(0);
+    opacity: 1;
+    
+}
+
+}
+
+/*---------- ANIMAÇÃO TEXTO PRIMEIRA PÁGINA ----------*/
+
+
+/*---------- BOTÃO PRIMEIRA PÁGINA ----------*/
+
+.btn {
+
+    width: 300px;
+    height: 100px;
+    border: none;
+    color: #e9ecef;
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    outline: none;
+    border: 2px solid #adb5bd;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+
+
+}
+
+
+.btn:hover {
+    color: white;
+    cursor:pointer;
+    color: #343a40;
+    
+
+}
+
+.btn:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #adb5bd;
+    
+}
+
+.btn:hover:before {
+
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+/*---------- BOTÃO PRIMEIRA PÁGINA ----------*/
+
+
+
+
+
+
+
+/*---------- DIMENSÕES PRIMEIRA PÁGINA ----------*/
+
+.segunda-pg {
+
+    width: 100%;
+    height: 670px;
+    background-image: url(/Images/papyrus-dark.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/*---------- DIMENSÕES PRIMEIRA PÁGINA ----------*/
+
+
+/*---------- BOX TEXT SEGUNDA PAGINA ----------*/
+
+.container {
+    
+    box-shadow: 15px 10px 1px #4F5D75;
+    width: 55%;
+    height: 500px;
+    background-color: #EEE5E9;
+    position: relative;
+    overflow: hidden;
+   
+
+
+}
+
+.social-lista-sobre {
+    text-align: right;
+    padding-top: 15px;
+    letter-spacing: 10px;
+
+}
+
+.social-lista-sobre i {
+
+    font-size: 2rem;
+    color: #a7a7a7;
+}
+
+
+.img-container2 {
+
+width: 50%;
+height: 500px;
+background: url(/Images/imagem-fundo.jpg);
+float: left;
+background-size: cover;
+background-position: top;
+opacity: 1;
+animation: animação-escala 25s;
+
+}
+
+
+.texto {
+top: 80px;
+width: 65%;
+height: 350px;
+position: absolute;
+right: 0;
+background-color: #EEE5E9;
+box-shadow: -5px  0px 0px;
+
+
+}
+
+.texto h1 {
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+    color: #2D3142;
+}
+.texto p {
+
+padding-right: 15px;
+padding-left: 112px;
+font-family: 'Montserrat', sans-serif;
+color: black;
+font-weight: 700;
+letter-spacing: 0.9px;
+text-align: justify;
+
+}
+/*---------- BOX TEXT SEGUNDA PAGINA ----------*/
+
+
+
+/*---------- TERCEIRA PAGINA ----------*/
+
+.terceira-pg {
+
+    width: 100%;
+    height: 670px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 50px;
+    background-color: #212529;
+}
+
+.header-terceira {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    background-color: #212529;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+/*---------- BOX ----------*/
+.container-box {
+width: 1000px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+
+
+}
+
+
+
+.box {
+position: relative;
+width: 300px;
+height: 400px;
+background-color: #000;
+box-shadow: 0 30px 30px rgba(0,0,0,.5);
+
+}
+
+.box .img-box {
+position: absolute;
+
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 100%;
+transition: 0.5s;
+
+
+}
+
+.box .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;  
+    
+    }
+
+.box:hover .img-box {
+    opacity: 0;
+
+}
+
+.box .content {
+position: absolute;
+bottom: 20px;
+left: 10%;
+width: 80%;
+height: 60px;
+background-color: #fff;
+transition: 0.5s;
+overflow: hidden;
+padding: 15px;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.box:hover .content {
+width: 100%;
+height: 100%;
+bottom: 0;
+left: 0;
+background-color: #B3B7EE;
+}
+
+
+.box:hover .content h3 {
+    margin: 10px;
+    padding: 0;
+    font-size: 30px;
+
+}
+
+.box .content ul {
+    margin: 10px 0 0 ;
+    padding: 0;
+    opacity: 0;
+    line-height: 1.2em;
+    transition: 0.5s;
+    text-align: justify;
+    list-style: none;
+    text-align: center;
+    font-size: 25px;
+    
+    }
+
+    .box .content li {
+        padding-bottom: 10px;
+    }
+
+    .box:hover .content ul {
+        opacity: 1;
+        transition-delay: 0.2s;
+        list-style: none;
+        
+        }
+
+/*---------- BOX ----------*/
+
+
+/*---------- TERCEIRA PAGINA ----------*/
+
+
+
+
+
+/*---------- QUARTA PAGINA ----------*/
+
+.contato {
+
+    width: 100%;
+    height: 670px;
+    background-color: #272727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato-forma {
+    width: 60%;
+    height: 550px;
+    display: flex;
+    
+    
+    box-shadow: 0 3rem 7rem rgba(0,0,0,.5);
+}
+
+.lado-esquerdo {
+    width: 35%;
+    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(/Images/barba.jpg) center no-repeat;
+    background-size: cover;
+
+}
+
+.lado-direito {
+    width: 65%;
+    background-color: #eee;
+    
+
+}
+
+.contato-header {
+    padding-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #272727;
+    margin-bottom: 5rem;
+    text-align: center; 
+}
+
+.lado-direito form {
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+}
+
+.campo {
+    width: 20rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.2rem dashed #636363;
+    margin: 3rem 0;
+    padding: 1rem 1rem 1rem 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    color: #4b4b4b;
+    
+   
+}
+
+
+.campo:focus {
+border-bottom-style: solid;
+outline: none;
+
+}
+.input-grupo {
+    position: relative;
+     border: none;
+     
+    
+}
+.input-grupo input {
+height: 1rem;
+
+
+
+
+}
+.input-grupo textarea {
+max-height: 7rem;
+max-width: 75rem;
+
+}
+.input-grupo label {
+    position: absolute;
+    left: 0;
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #4b4b4b;
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: all 0.3s;
+    
+}
+
+.label-input {
+bottom: 3rem;
+
+
+}
+.campo:focus ~ label {
+    transform: translateY(-5rem);
+    font-size: 10px;
+    
+}
+
+.submit-btn {
+    width: 20rem;
+    height: 50px;
+    background-color: #c29522;
+    color: white;
+    border: none;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+/*---------- QUARTA PAGINA ----------*/
+
+
+
+/*---------- FOOTER ----------*/
+.footer {
+width: 100%;
+height: 15rem;
+background-color: #17181b;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.conteudo-footer {
+width: 60%;
+display: flex;
+justify-content: space-between;
+
+}
+
+.copyright {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #a7a7a7;
+}
+
+.social-lista a {
+    margin: 0 2rem;
+  }
+  
+  .social-lista i {
+    font-size: 2rem;
+    color: #a7a7a7;
+  }
